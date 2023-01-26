@@ -23,10 +23,12 @@ import {
   Editor,
 } from './pages';
 
+import { UseStateContext } from './contexts/ContextProvider';
+
 import './App.css';
 
 const App = () => {
-  const activeMenu = true;
+  const { activeMenu } = UseStateContext();
 
   return (
     <div>
